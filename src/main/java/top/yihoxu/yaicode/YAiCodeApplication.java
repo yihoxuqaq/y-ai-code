@@ -1,11 +1,13 @@
 package top.yihoxu.yaicode;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 @SpringBootApplication
 @EnableAspectJAutoProxy(exposeProxy = true)
+@MapperScan("top.yihoxu.yaicode.mapper")
 /**
  * exposeProxy=true
  * 通过spring AOP提供对当前代理对象的访问，使得可以在业务逻辑中访问
