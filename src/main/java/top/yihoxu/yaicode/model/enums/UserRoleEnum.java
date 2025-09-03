@@ -2,12 +2,14 @@ package top.yihoxu.yaicode.model.enums;
 
 import cn.hutool.core.util.ObjUtil;
 import cn.hutool.core.util.StrUtil;
+import lombok.Getter;
 
 /**
  * @author yihoxu
  * @date 2025/8/29  14:38
  * @description todo
  */
+@Getter
 public enum UserRoleEnum {
 
     USER("用户","user"),
